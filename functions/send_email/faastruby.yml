@@ -5,4 +5,4 @@ before_build: []
 runtime: ruby:2.6
 schedule:
   morning_email:
-    when: every day at 13:00 am on America/New_York
+    when: every day at 13:00 on America/New_York
