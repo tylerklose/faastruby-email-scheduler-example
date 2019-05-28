@@ -1,0 +1,4 @@
+---
+cli_version: 0.5.28
+name: weather
+runtime: ruby:2.6

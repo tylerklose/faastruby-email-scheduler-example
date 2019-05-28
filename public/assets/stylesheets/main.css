@@ -1,0 +1,55 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  height: 100%;
+  margin: 0px;
+  /* background-image: linear-gradient(to right bottom, #691003, #7a1309, #8b150e, #9d1712, #af1817); */
+  background: #DADADA;
+}
+
+body {
+  margin: 0px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-family: 'Open Sans';
+  color: #313131;
+  height: 100%;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Overpass';
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.header {
+  padding-top: 40px;
+  padding-bottom: 0px;
+  height: 64px;
+  width: 100%;
+}
+
+.logo-image-div {
+  vertical-align:middle;
+  display:table-cell;
+  height: 64px;
+  padding: 0px;
+}
+
+.logo-image {
+  height: 64px;
+  padding: 0px;
+}
+
+.content {
+  width: 100%;
+  margin: 0px;
+  margin-top: 100px;
+}
