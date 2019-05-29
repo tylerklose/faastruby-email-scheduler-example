@@ -1,10 +1,9 @@
 require 'oj' # Use Oj for faster JSON
 
 require 'mailgun-ruby'
-# require 'pry' # Don't ship pry to the cloud. Maybe we should bake that in Local
 
-def handler event
-  context = JSON.parse(event.context)
+def handler(event)
+  context = Oj.load(event.context)
   mail_api_key = context["mailgun"]["api_key"]
   mg_client = Mailgun::Client.new(mail_api_key)
 
@@ -27,7 +26,6 @@ def fetch_weather
   # Async call with a callback. `forecast` will be equal what the block returns
   # once the request is back
   forecast = Weather.call do |response|
-    # Use Oj
     OpenStruct.new(Oj.load(response.value)['currently'])
   end
   # You don't need to use callbacks:

@@ -1,8 +1,0 @@
----
-cli_version: 0.5.26
-name: send_email
-before_build: []
-runtime: ruby:2.6
-schedule:
-  morning_email:
-    when: every day at 13:00 on America/New_York

@@ -1,4 +1,6 @@
 ---
 cli_version: 0.5.28
 name: weather
+before_build: []
 runtime: ruby:2.6
+test_command: rspec

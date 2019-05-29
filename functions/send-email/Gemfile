@@ -1,8 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'forecast_io'
 gem 'mailgun-ruby'
-gem 'pry'
 
 group :test do
   gem 'rspec'

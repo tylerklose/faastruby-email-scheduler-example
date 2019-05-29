@@ -1,9 +1,8 @@
-require 'json'
-
+require 'oj'
 require 'forecast_io'
 
 def handler(event)
-  context = JSON.parse(event.context)
+  context = Oj.load(event.context)
   api_key = context["dark_sky"]["api_key"]
 
   ForecastIO.api_key = api_key
